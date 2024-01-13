@@ -1,27 +1,29 @@
-/*========== menu icon navbar ==========*/
+/*========== Menu Icon Navbar ==========*/
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
 
-/*========== scroll sections active link ==========*/
+/*========== Scroll Sections Active Link ==========*/
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
 
 
-    /*========== sticky navbar ==========*/
+    /*========== Sticky Navbar ==========*/
+    let header = document.querySelector('.header');
 
+    header.classList.toggle('sticky', window.scrollY > 100);
 
-    /*========== remove menu icon navbar when click navbar link (scroll) ==========*/
+    /*========== Remove Menu Icon Navbar When Click Navbar Link (Scroll)) ==========*/
 
 };
 
 
-/*========== swiper ==========*/
+/*========== Swiper ==========*/
 
 
-/*========== dark light mode ==========*/
+/*========== Dark/Light Mode ==========*/
 
 
-/*========== scroll reveal ==========*/
+/*========== Scroll Reveal ==========*/
