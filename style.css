@@ -31,7 +31,7 @@ html {
 }
 
 body {
-    background: rgb(176, 137, 137);
+    background: rgb(218, 195, 195);
     color: var(--text-color);
 }
 
@@ -47,6 +47,8 @@ body {
     z-index: 100;
     transition: .5s;
 }
+
+
 
 .header.sticky {
     background: var(--bg-color);
@@ -67,7 +69,21 @@ body {
     color: var(--white-color);
     font-weight: 500;
     margin-right: 3.5rem;
+    transition: .3s;
 }
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+
+/* nav a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px
+} */
 
 .header.sticky .navbar a {
     color: var(--text-color);
@@ -474,7 +490,7 @@ span {
 
 .contact {
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     flex-direction: column;
     height: 70vh;
 }
@@ -494,11 +510,11 @@ span {
     align-items: center;
     justify-content: center;
     gap: 0.54rem;
-    margin: 4rem;
+    margin: 2rem;
 }
 
 .contact-info p {
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .contact-info i {
