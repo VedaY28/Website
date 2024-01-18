@@ -12,17 +12,20 @@
 }
 
 :root {
-    --bg-color: #fdfdfd;
+    /* --bg-color: #fdfdfd; */
+    --bg-color:  rgb(218, 195, 195);
     --text-color: #333;
     --main-color: #0b70cf;
     --white-color: #fdfdfd;
-    --shadow-color: rgba(0, 0, 0, .2);   
+    --shadow-color: rgba(0, 0, 0, .2);
+    --bgs-color: #fdfdfd;   
 }
 
 .dark-mode {
     --bg-color: #0b061f;
     --text-color: #fdfdfd;
-    --shadow-color: rgba(0, 0, 0, .7);   
+    --shadow-color: #fdfdfd;
+    --bgs-color: #0b061f;   
 }
 
 html {
@@ -32,6 +35,7 @@ html {
 
 body {
     background: rgb(218, 195, 195);
+    background: var(--bg-color);
     color: var(--text-color);
 }
 
@@ -51,7 +55,7 @@ body {
 
 
 .header.sticky {
-    background: var(--bg-color);
+    background: var(--bgs-color);
     box-shadow: 0 .1rem 1rem var(--shadow-color);
 }
 
@@ -366,13 +370,15 @@ span {
 }
 
 .skills-container .skills-box {
-    flex: 1 1 30rem;
-    background: var(--bg-color);
-    padding: 3rem 2rem 4rem;
+    flex: 1 1 20rem;
+    background: var(--bgs-color);
+    padding: 3rem 0.5rem 1rem;
     border-radius: 2rem;
     box-shadow: 0 .1rem .5rem var(--shadow-color);
     text-align: center;
     border-top: .6rem solid var(--main-color);
+    border-left: .6rem solid var(--main-color);
+    border-right: .6rem solid var(--main-color);
     border-bottom: .6rem solid var(--main-color);
     transition: .5 ease;
 }
@@ -384,7 +390,7 @@ span {
 
 
 .skills-box i {
-    font-size: 7rem;
+    font-size: 5rem;
     color: var(--main-color);
 }
 
@@ -699,9 +705,12 @@ span {
     }
 
     .home {
-        padding: 0 3% 10rem;
+        /* padding: 0 3% 5rem; */
+        padding: 10rem 3% 5rem;        
         justify-content: center;
         text-align: center;
+        display: flex;
+        align-items: center;
     }
 
     .home-content h3{
@@ -846,7 +855,11 @@ span {
     }
 
     .home {
-        padding: 0 3% 30rem;
+        padding: 10rem 3% 5rem;        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
     .home .profession-box .profession:nth-child(1) {
@@ -920,6 +933,13 @@ span {
     .contact-info i {
         cursor: default;
         font-size: 2rem;
+    }
+
+    .home {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 }
 
