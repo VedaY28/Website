@@ -11,6 +11,12 @@ menuIcon.onclick = () => {
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
+let resume = document.getElementById("resumeLink");
+
+resume.addEventListener("click", function() {
+    window.open("assets/College Resume '24.pdf", "_blank");
+});
+
 window.onscroll = () => {
 
     sections.forEach(sec => {

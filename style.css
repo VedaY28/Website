@@ -13,11 +13,11 @@
 
 :root {
     /* --bg-color: #fdfdfd; */
-    --bg-color:  rgb(218, 195, 195);
+    --bg-color:  rgb(245, 217, 180);
     --text-color: #333;
     --main-color: #0b70cf;
     --white-color: #fdfdfd;
-    --shadow-color: rgba(0, 0, 0, .2);
+    --shadow-color: rgba(0, 0, 0, .2);  
     --bgs-color: #fdfdfd;   
 }
 
@@ -34,7 +34,7 @@ html {
 }
 
 body {
-    background: rgb(218, 195, 195);
+    /* background: rgb(218, 195, 195); */
     background: var(--bg-color);
     color: var(--text-color);
 }
@@ -73,7 +73,14 @@ body {
     font-weight: 500;
     margin-right: 3.5rem;
     transition: .3s;
-}
+    text-shadow: 
+        0 0 2px black,
+        0 0 2px black,
+        0 0 2px black,
+        0 0 2px black;
+    }
+
+
 
 .navbar a:hover {
     color: var(--main-color);
@@ -89,8 +96,8 @@ body {
 } */
 
 .header.sticky .navbar a {
-    color: var(--text-color);
-
+    /* color: var(--text-color); */
+    color: var(--white-color);
 }
 
 .header.sticky .navbar a:hover {
@@ -511,7 +518,7 @@ span {
 .contact .contact-container {
     display: flex;
     justify-content: center;
-    border-radius: 5rem;
+    border-radius: 4rem;
     border: rgb(53, 53, 53) 0.5rem solid;
     background: (250, 250, 250);
     margin: 2rem auto;
@@ -523,16 +530,24 @@ span {
     align-items: center;
     justify-content: center;
     gap: 0.54rem;
-    margin: 2rem;
+    margin: 1rem;
 }
 
 .contact-info p {
-    font-size: 4rem;
+    font-size: 3rem;
+}
+
+.contact-info p a {
+    color: var(--text-color);
+}
+
+.contact-info p a:hover {
+    color: var(--main-color);
 }
 
 .contact-info i {
     cursor: default;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 /* FOOTER SECTION */
