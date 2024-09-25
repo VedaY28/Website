@@ -12,10 +12,19 @@ let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
 let resume = document.getElementById("resumeLink");
+let resume2 = document.getElementById("resumeLink2");
 
-resume.addEventListener("click", function() {
-    window.open("assets/Veda Yakkali - Resume.pdf", "_blank");
-});
+if (resume) {
+    resume.addEventListener("click", function() {
+        window.open("assets/Veda Yakkali - Resume.pdf", "_blank");
+    });
+}
+
+if (resume2) {
+    resume2.addEventListener("click", function() {
+        window.open("assets/Veda Yakkali - Resume (Data).pdf", "_blank");
+    });
+}
 
 window.onscroll = () => {
 
